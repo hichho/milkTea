@@ -1,0 +1,25 @@
+.web {
+  width: calc(80vw + 24px);
+
+  .itemFrame {
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 8px;
+    border: 1px solid #3e6cee;
+    margin-right: 12px;
+    margin-bottom: 12px;
+
+    .logo {
+      object-fit: contain;
+      height: 44px;
+      max-width: calc(80vw - 32px);
+    }
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .web {
+    width: 90vw;
+  }
+}

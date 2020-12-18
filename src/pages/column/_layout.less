@@ -1,0 +1,156 @@
+
+.column {
+  width: 70%;
+  margin: 16px auto;
+
+  .left {
+    width: 200px;
+    background: #c4e2ff;
+    border-radius: 8px;
+    padding: 12px;
+
+    .home {
+      font-size: 20px;
+      color: #333333;
+      cursor: pointer;
+    }
+
+    .homeDivider {
+      height: 8px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .groupItem {
+      color: #3a3a3a;
+      border-bottom: 1px solid #b7babf;
+
+      .itemGroupIcon {
+        margin-right: 4px;
+        width: 14px;
+        height: 14px;
+        animation: nor 100ms linear;
+        transform: rotate(0deg);
+
+        @keyframes nor {
+          0% {
+            -webkit-transform: rotate(90deg);
+          }
+          25% {
+            -webkit-transform: rotate(75deg);
+          }
+          50% {
+            -webkit-transform: rotate(45deg);
+          }
+          75% {
+            -webkit-transform: rotate(25deg);
+          }
+          100% {
+            -webkit-transform: rotate(0deg);
+          }
+        }
+      }
+
+      .itemGroupIconSel {
+        margin-right: 4px;
+        width: 14px;
+        height: 14px;
+        animation: sel 100ms linear;
+        transform: rotate(90deg);
+
+        @keyframes sel {
+          0% {
+            -webkit-transform: rotate(0deg);
+          }
+          25% {
+            -webkit-transform: rotate(20deg);
+          }
+          50% {
+            -webkit-transform: rotate(45deg);
+          }
+          75% {
+            -webkit-transform: rotate(75deg);
+          }
+          100% {
+            -webkit-transform: rotate(90deg);
+          }
+        }
+
+      }
+
+      .itemHeader {
+        height: 36px;
+        width: 100%;
+        font-size: 15px;
+        cursor: pointer;
+        margin-top: 6px;
+        color: #008ad4;
+      }
+
+      .itemHeaderSel {
+        .itemHeader;
+      }
+
+      .apiHide {
+        display: none;
+      }
+
+      .apiShow {
+        display: block;
+      }
+
+      .itemMore {
+        color: #008ad4;
+        font-weight: bold;
+        font-size: 20px;
+        height: 36px;
+        padding-right: 12px;
+      }
+
+      &:last-child {
+        margin-bottom: 24px;
+      }
+
+    }
+
+    .apiItem {
+      color: #333333;
+      font-size: 14px;
+      padding: 0 12px;
+      cursor: pointer;
+      line-height: 32px;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .api {
+        overflow: hidden;
+        word-break: normal;
+        line-height: 32px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+
+    }
+
+    .apiItemSel {
+      .apiItem;
+      color: #ff614b;
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .column {
+    width: 98vw;
+
+    .left {
+      width: 120px;
+    }
+
+  }
+}
+

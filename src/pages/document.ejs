@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="国民健康护理网">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <title>国民健康护理网</title>
+    <link rel="icon" href="./favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./home/css/loaders.css">
+    <script type="text/javascript" src="./home/js/ueditor.parse.min.js"></script>
+
+</head>
+<body>
+<noscript>Out-of-the-box mid-stage front/design solution!</noscript>
+
+<div id="root">
+    <div style="display: flex;justify-content: center;align-items: center;flex-direction: column;margin-top: 50vh;">
+        <div  class="loader">
+            <div  id="loaderFrame" style="display: flex;justify-content: center;align-content: center;">
+            </div>
+            <div style="display: flex;justify-content: center;align-content: center;margin-top: 4vh;color:gray;
+            font-size: 13px;">
+                请使用现代浏览器，或者Internet Explorer 10.0 以上的浏览器
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    const Type = [
+        {id:0,name:"ball-clip-rotate-multiple",count:2},
+        {id:1,name:"ball-pulse",count:3},
+        {id:2,name:"ball-clip-rotate-pulse",count:2},
+        {id:3,name:"square-spin",count:1},
+        {id:4,name:"ball-rotate",count:1},
+        {id:5,name:"ball-triangle-path",count:3},
+        {id:6,name:"line-scale",count:5},
+    ];
+
+    var div_id = 1;
+    function add_div() {
+        var obj = document.getElementById("loaderFrame");
+        // let a = Math.floor(Math.random()*7);
+        let a = 6;
+        obj.setAttribute("class", Type[a].name);
+        for (var i = 0; i < Type[a].count; i++) {
+            var e = document.createElement("div");
+            e.id = div_id;
+            document.getElementById("loaderFrame").appendChild(e);
+            div_id++;
+        }
+    }
+    add_div();
+</script>
+</body>
+</html>
