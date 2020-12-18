@@ -1,0 +1,96 @@
+.frame {
+  padding: 32px 0;
+  width: 1160px;
+  height: 1200px;
+
+  font-family: Microsoft YaHei;
+
+  .title {
+    width: 1160px;
+    font-size: 60px;
+    font-family: Microsoft YaHei;
+    color: black;
+
+    .smalltitle {
+      font-size: 36px;
+      margin-top: 8px;
+      margin-left: 56px;
+    }
+  }
+
+  .bodyFrame {
+    width: 100%;
+    margin-bottom: 42px;
+    //柱子
+    .line {
+      width: 3px;
+      position: absolute;
+      top: 100px;
+      left: 260px;
+      z-index: 101;
+      height: 810px;
+      background-color: #c2ac87;
+    }
+
+    .itemFrame {
+      position: absolute;
+      top: 120px;
+      left: 120px;
+      background-color: white;
+      //  圆形
+      .item {
+        //background-color: red;
+        margin: 12px 0;
+
+        .time {
+          font-size: 30px;
+          color: #c6ac82;
+          //background-color: red;
+          width: 100px;
+          margin-left: 24px;
+        }
+
+        .border {
+          width: 36px;
+          height: 36px;
+          z-index: 102;
+          background-color: #c6ac82;
+          border-radius: 50%;
+
+          .circle {
+            width: 30px;
+            height: 30px;
+            z-index: 102;
+            background-color: white;
+            border-radius: 50%;
+
+            .in {
+              width: 20px;
+              height: 20px;
+              z-index: 102;
+              background-color: #c6ac82;
+              border-radius: 50%;
+            }
+          }
+        }
+
+        .content {
+          margin: 4px 0 4px 24px;
+          font-size: 17px;
+
+          .contentLine {
+            background-color: #c6ac82;
+            width: 22px;
+            height: 3px;
+          }
+          .contentValue {
+            font-size: 17px;
+            color: black;
+            letter-spacing: 2px;
+            margin-left: 24px;
+          }
+        }
+      }
+    }
+  }
+}
