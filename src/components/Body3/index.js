@@ -9,7 +9,7 @@ export default () => {
       info: [<Flex>第1家合作门店开业【古茗开始连锁经营模式】</Flex>],
     },
     {
-      time: '2010',
+      time: '2011',
       info: [
         <Flex>第1家合作门店开业【古茗开始连锁经营模式】</Flex>,
         <Flex>
@@ -18,11 +18,11 @@ export default () => {
         </Flex>,
       ],
     },
-    { time: '2010', info: [<Flex>第一家古茗营业</Flex>, <Flex></Flex>] },
-    { time: '2010', info: [<Flex>第一家古茗营业</Flex>, <Flex></Flex>] },
-    { time: '2010', info: [<Flex>第一家古茗营业</Flex>, <Flex></Flex>] },
+    { time: '2012', info: [<Flex>第一家古茗营业</Flex>] },
+    { time: '2013', info: [<Flex>第一家古茗营业</Flex>] },
+    { time: '2014', info: [<Flex>第一家古茗营业</Flex>] },
     {
-      time: '2010',
+      time: '2015',
       info: [
         <Flex>第1家合作门店开业【古茗开始连锁经营模式】</Flex>,
         <Flex>
@@ -31,10 +31,10 @@ export default () => {
         </Flex>,
       ],
     },
-    { time: '2010', info: [<Flex>第一家古茗营业</Flex>, <Flex></Flex>] },
-    { time: '2010', info: [<Flex>第一家古茗营业</Flex>, <Flex></Flex>] },
+    { time: '2016', info: [<Flex>第一家古茗营业</Flex>] },
+    { time: '2017', info: [<Flex>第一家古茗营业</Flex>] },
     {
-      time: '2010',
+      time: '2018',
       info: [
         <Flex>第1家合作门店开业【古茗开始连锁经营模式】</Flex>,
         <Flex>
@@ -43,7 +43,7 @@ export default () => {
         </Flex>,
       ],
     },
-    { time: '2010', info: [<Flex>第一家古茗营业</Flex>, <Flex></Flex>] },
+    { time: '2019', info: [<Flex>第一家古茗营业</Flex>] },
   ];
 
   const renderItem = () => {

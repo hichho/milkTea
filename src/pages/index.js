@@ -5,6 +5,7 @@ import CarouselinBody from '@/components/CarouselinBody';
 import Body1 from '@/components/Body1';
 import Body2 from '@/components/Body2';
 import Body3 from '@/components/Body3';
+import Body4 from '@/components/Body4';
 
 export default () => {
   return (
@@ -19,6 +20,12 @@ export default () => {
 
       {/*  历程*/}
       <Body3 />
+
+      {/*  门店*/}
+      <Body4 />
+
+      {/*    空白*/}
+      <div style={{ height: 640 }}></div>
     </Flex>
   );
 };
