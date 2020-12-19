@@ -6,6 +6,7 @@ import Body1 from '@/components/Body1';
 import Body2 from '@/components/Body2';
 import Body3 from '@/components/Body3';
 import Body4 from '@/components/Body4';
+import Body5 from '@/components/Body5';
 
 export default () => {
   return (
@@ -22,7 +23,10 @@ export default () => {
       <Body3 />
 
       {/*  门店*/}
-      <Body4 />
+      {/*<Body4/>*/}
+
+      {/*连锁布局*/}
+      <Body5 />
 
       {/*    空白*/}
       <div style={{ height: 640 }}></div>
