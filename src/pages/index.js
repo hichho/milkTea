@@ -7,6 +7,7 @@ import Body2 from '@/components/Body2';
 import Body3 from '@/components/Body3';
 import Body4 from '@/components/Body4';
 import Body5 from '@/components/Body5';
+import Body6 from '@/components/Body6';
 
 export default () => {
   return (
@@ -27,6 +28,9 @@ export default () => {
 
       {/*连锁布局*/}
       <Body5 />
+
+      {/*品牌优势*/}
+      <Body6 />
 
       {/*    空白*/}
       <div style={{ height: 640 }}></div>
