@@ -9,6 +9,7 @@ import Body4 from '@/components/Body4';
 import Body5 from '@/components/Body5';
 import Body6 from '@/components/Body6';
 import Body7 from '@/components/Body7';
+import Body8 from '@/components/Body8';
 
 export default () => {
   return (
@@ -35,6 +36,9 @@ export default () => {
 
       {/*扶持政策*/}
       <Body7 />
+
+      {/*联系我们*/}
+      <Body8 />
 
       {/*    空白*/}
       <div style={{ height: 640 }}></div>
