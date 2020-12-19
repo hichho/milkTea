@@ -41,7 +41,7 @@ export default () => {
       <Body8 />
 
       {/*    空白*/}
-      <div style={{ height: 640 }}></div>
+      {/*<div style={{ height: 640 }}></div>*/}
     </Flex>
   );
 };

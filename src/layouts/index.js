@@ -1,18 +1,21 @@
-import React, {useEffect, useState} from "react";
-import {LocaleProvider} from "antd";
+import React, { useEffect, useState } from 'react';
+import { LocaleProvider } from 'antd';
 import zh_CN from 'antd/es/locale-provider/zh_CN';
 import Header from '@/components/Header';
+import Foot from '@/components/Foot';
 
-export default (props) => {
-  const {pathname, query} = props.location;
+export default props => {
+  const { pathname, query } = props.location;
 
+  return (
+    <LocaleProvider locale={zh_CN}>
+      <div>
+        <Header />
+        <div style={{ minHeight: '80vh' }}>{props.children}</div>
+        {/*/footer*/}
 
-  return <LocaleProvider locale={zh_CN}>
-    <div>
-      <Header/>
-      <div style={{minHeight: '80vh'}}>{props.children}</div>
-      {/*/footer*/}
-    </div>
-  </LocaleProvider>
-
-}
+        <Foot />
+      </div>
+    </LocaleProvider>
+  );
+};
