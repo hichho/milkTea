@@ -28,6 +28,7 @@ export default () => {
           {data.map((item, index) => {
             return (
               <Flex
+                key={index}
                 className={less.item}
                 direction={'column'}
                 alignItems={'center'}

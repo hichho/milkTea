@@ -20,13 +20,13 @@ export default () => {
       <Body1 />
 
       {/*swiper*/}
-      {/*<Body2/>*/}
+      <Body2 />
 
       {/*  历程*/}
       <Body3 />
 
       {/*  门店*/}
-      {/*<Body4/>*/}
+      <Body4 />
 
       {/*连锁布局*/}
       <Body5 />

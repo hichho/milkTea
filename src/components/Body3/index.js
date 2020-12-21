@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import less from './index.less';
 import Flex from '@/components/Flex';
+import Common from '@/utils/Common';
 
 export default () => {
   const itemData = [
@@ -44,6 +45,20 @@ export default () => {
       ],
     },
     { time: '2019', info: [<Flex>第一家古茗营业</Flex>] },
+    {
+      time: '',
+      info: [
+        <Flex
+          style={{
+            marginLeft: 60,
+            color: '#c6ac82',
+            fontSize: 25,
+          }}
+        >
+          Never Stop
+        </Flex>,
+      ],
+    },
   ];
 
   const renderItem = () => {
@@ -51,29 +66,38 @@ export default () => {
       <Flex direction={'column'} className={less.itemFrame}>
         {itemData.map((item, index) => {
           return (
-            <Flex alignItems={'center'} className={less.item}>
+            <Flex alignItems={'center'} className={less.item} key={index}>
               {/*时间*/}
               <Flex className={less.time}>{item.time}</Flex>
               {/*  点*/}
-              <Flex
-                className={less.border}
-                justify={'center'}
-                alignItems={'center'}
-              >
+              {!Common.isEmpty(item.time) && (
                 <Flex
-                  className={less.circle}
+                  className={less.border}
                   justify={'center'}
                   alignItems={'center'}
                 >
-                  <Flex className={less.in}></Flex>
+                  <Flex
+                    className={less.circle}
+                    justify={'center'}
+                    alignItems={'center'}
+                  >
+                    <Flex className={less.in}></Flex>
+                  </Flex>
                 </Flex>
-              </Flex>
+              )}
+
               {/*  内容*/}
               <Flex direction={'column'}>
                 {item.info.map((unit, idx) => {
                   return (
-                    <Flex className={less.content} alignItems={'center'}>
-                      <Flex className={less.contentLine}></Flex>
+                    <Flex
+                      className={less.content}
+                      alignItems={'center'}
+                      key={idx}
+                    >
+                      {!Common.isEmpty(item.time) && (
+                        <Flex className={less.contentLine}></Flex>
+                      )}
                       <Flex className={less.contentValue}>{unit}</Flex>
                     </Flex>
                   );
@@ -99,6 +123,8 @@ export default () => {
       <Flex direction={'column'} className={less.bodyFrame}>
         {/*  柱子*/}
         <Flex className={less.line}></Flex>
+        {/*斜柱子*/}
+        <Flex className={less.specialline}></Flex>
 
         {renderItem()}
       </Flex>
