@@ -7,12 +7,13 @@ import SwiperCore, {
   Scrollbar,
   A11y,
   Thumbs,
+  Autoplay,
 } from 'swiper';
 import 'swiper/components/navigation/navigation.less';
 import 'swiper/components/pagination/pagination.less';
 import 'swiper/components/scrollbar/scrollbar.less';
 
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Thumbs]);
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Thumbs, Autoplay]);
 
 export default () => {
   return (
@@ -25,11 +26,13 @@ export default () => {
       }}
     >
       <Swiper
-        autoplay={true}
-        simulateTouch={true}
+        loop={true}
+        autoplay={{
+          autoPlay: true,
+          delay: 1500,
+          autoplayDisableOnInteraction: false,
+        }}
         pagination={{ clickable: true }}
-        paginationType={'custom'}
-        Pagination={true}
       >
         <SwiperSlide virtualIndex={'1'}>
           <img

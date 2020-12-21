@@ -53,6 +53,7 @@ export default () => {
           }
           return (
             <Flex
+              key={index}
               className={less.text}
               style={{
                 transform: 'rotate(' + value + 'deg)',
@@ -113,7 +114,7 @@ export default () => {
       <Flex className={less.mobile} direction={'column'}>
         {itemData.map((item, index) => {
           return (
-            <Flex className={less.unit} direction={'column'}>
+            <Flex className={less.unit} direction={'column'} key={index}>
               <img
                 src={item.src}
                 style={{ width: '100%', objectFit: 'contain' }}

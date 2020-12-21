@@ -6,7 +6,7 @@ import SwiperCore, {
   Pagination,
   Scrollbar,
   A11y,
-  Thumbs,
+  Autoplay,
 } from 'swiper';
 import 'swiper/components/navigation/navigation.less';
 import 'swiper/components/pagination/pagination.less';
@@ -15,11 +15,9 @@ import less from './index.less';
 import Flex from '@/components/Flex';
 // import 'swiper/swiper.scss';
 
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Thumbs]);
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
 
 export default () => {
-  const [thumbsSwiper, setThumbsSwiper] = useState(null);
-
   const renderCustom = (swiper, current, total) => {
     console.log(swiper, current, total);
 
@@ -27,9 +25,9 @@ export default () => {
     let text = ['等级专属券', '免邮特权', '生日礼券'];
     for (let i = 1; i <= total; i++) {
       if (i == current) {
-        paginationHtml = <div>{text[i]}</div>;
+        paginationHtml = <div>1</div>;
       } else {
-        paginationHtml = <div>{text[i]}</div>;
+        paginationHtml = <div>12</div>;
       }
     }
     console.log(paginationHtml);
@@ -46,18 +44,28 @@ export default () => {
       }}
     >
       <Swiper
-        autoplay={true}
-        simulateTouch={true}
-        thumbs={{ swiper: thumbsSwiper }}
-        pagination={{ clickable: true }}
-        paginationType={'custom'}
-        Pagination={true}
+        // simulateTouch={true}
+        loop={true}
+        autoplay={{
+          autoPlay: true,
+          delay: 1500,
+          autoplayDisableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+          // renderCustom: function () {
+          //   return <span>fsfs</span>
+          // },
+          renderBullet: function(index, className) {
+            console.log(index, className);
+            console.log('<span class="' + 'special' + '">' + index + '</span>');
+            return '<span class="' + 'special' + '">' + index + '</span>';
+          },
+        }}
         onSwiper={swiper => {
           console.log(swiper);
-          setThumbsSwiper();
         }}
         onSlideChange={() => console.log('slide change')}
-        renderCustom={renderCustom}
       >
         <SwiperSlide virtualIndex={'1'}>
           <img

@@ -4,7 +4,7 @@ import Flex from '@/components/Flex';
 import CarouselinBody from '@/components/CarouselinBody';
 import Body1 from '@/components/Body1';
 import DemoBody2 from '@/components/DemoBody2';
-// import Body2 from '@/components/Body2';
+import Body2 from '@/components/Body2';
 import Body3 from '@/components/Body3';
 import Body4 from '@/components/Body4';
 import Body5 from '@/components/Body5';
@@ -21,7 +21,7 @@ export default () => {
       <Body1 />
 
       {/*swiper*/}
-      {/*<Body2 />*/}
+      <Body2 />
 
       {/*<DemoBody2 />*/}
 
