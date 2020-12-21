@@ -8,10 +8,8 @@ export default () => {
 
   const TabsData = [
     { name: '首页', path: '/' },
-    { name: '合作', path: '/' },
-    { name: '疑问', path: '/' },
-    { name: '联系我们', path: '/' },
-    { name: '人才招聘', path: '/' },
+    { name: '申请合作', path: '/' },
+    { name: '常见疑问', path: '/' },
   ];
 
   useEffect(() => {}, [1]);
@@ -41,7 +39,7 @@ export default () => {
           <img src={'./image/logo.jpg'} alt={''} className={less.logo} />
         </div>
         {/*  第三部分*/}
-        <Flex alignItems={'center'}>
+        <Flex alignItems={'center'} className={less.contacts}>
           <img
             src={'./image/phone.png'}
             alt={''}

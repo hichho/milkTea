@@ -15,33 +15,33 @@ import Body8 from '@/components/Body8';
 export default () => {
   return (
     <Flex direction={'column'} className={styles.index} alignItems={'center'}>
-      <CarouselinBody />
+      {/*<CarouselinBody />*/}
 
       {/*两张卡片*/}
-      <Body1 />
+      {/*<Body1 />*/}
 
       {/*swiper*/}
       {/*<Body2 />*/}
 
-      <DemoBody2 />
+      {/*<DemoBody2 />*/}
 
       {/*  历程*/}
-      <Body3 />
+      {/*<Body3 />*/}
 
       {/*  门店*/}
-      <Body4 />
+      {/*<Body4 />*/}
 
       {/*连锁布局*/}
-      <Body5 />
+      {/*<Body5 />*/}
 
       {/*品牌优势*/}
-      <Body6 />
+      {/*<Body6 />*/}
 
       {/*扶持政策*/}
-      <Body7 />
+      {/*<Body7 />*/}
 
       {/*联系我们*/}
-      <Body8 />
+      {/*<Body8 />*/}
 
       {/*    空白*/}
       {/*<div style={{ height: 640 }}></div>*/}
