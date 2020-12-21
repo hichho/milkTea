@@ -18,7 +18,7 @@ export default () => {
       <CarouselinBody />
 
       {/*两张卡片*/}
-      {/*<Body1 />*/}
+      <Body1 />
 
       {/*swiper*/}
       {/*<Body2 />*/}

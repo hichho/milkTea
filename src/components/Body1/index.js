@@ -73,6 +73,7 @@ export default () => {
       <Flex className={less.title}>
         <span>HOW</span>
         <span className={less.righttitle}>如何识别古茗 慎防诈骗</span>
+        <Flex className={less.line}></Flex>
       </Flex>
       {/*中央两个图片*/}
       <Flex className={less.itemFrame} justify={'center'}>
@@ -102,6 +103,36 @@ export default () => {
               </Flex>
 
               <Flex className={less.title3} justify={'center'}>
+                {item.title3}
+              </Flex>
+            </Flex>
+          );
+        })}
+      </Flex>
+      {/*  手机端的两个图片*/}
+      <Flex className={less.mobile} direction={'column'}>
+        {itemData.map((item, index) => {
+          return (
+            <Flex className={less.unit} direction={'column'}>
+              <img
+                src={item.src}
+                style={{ width: '100%', objectFit: 'contain' }}
+              />
+
+              <Flex style={{ marginTop: 24 }} alignItems={'center'}>
+                <Flex
+                  style={{
+                    width: 8,
+                    height: 8,
+                    borderRadius: '100%',
+                    backgroundColor: '#c6ac82',
+                  }}
+                />
+                <Flex style={{ margin: '0 12px' }}>{item.title}</Flex>
+              </Flex>
+
+              <Flex style={{ marginTop: 12, marginBottom: 24 }}>
+                {item.title2}
                 {item.title3}
               </Flex>
             </Flex>

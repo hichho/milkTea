@@ -20,7 +20,6 @@ export default () => {
       className="swiper-container"
       style={{
         width: '100%',
-        height: '500px',
         marginTop: 52,
         disableOnInteraction: false,
       }}
