@@ -1,27 +1,52 @@
 import React, { useEffect } from 'react';
-import less from './index.less';
-import { Carousel } from 'antd';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper-bundle.css';
+import SwiperCore, {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Thumbs,
+} from 'swiper';
+import 'swiper/components/navigation/navigation.less';
+import 'swiper/components/pagination/pagination.less';
+import 'swiper/components/scrollbar/scrollbar.less';
+
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Thumbs]);
 
 export default () => {
-  const banner = [
-    { id: '1', image: './image/demobg1.jpg' },
-    { id: '2', image: './image/demobg2.jpg' },
-  ];
-
   return (
-    <div className={less.frame}>
-      <Carousel autoplay className={less.carousel} effect={'fade'}>
-        {banner.map((item, index) => {
-          return (
-            <img
-              key={item.id}
-              className={less.cover}
-              alt={''}
-              src={item.image}
-            />
-          );
-        })}
-      </Carousel>
+    <div
+      className="swiper-container"
+      style={{
+        width: '100%',
+        height: '500px',
+        marginTop: 52,
+        disableOnInteraction: false,
+      }}
+    >
+      <Swiper
+        autoplay={true}
+        simulateTouch={true}
+        pagination={{ clickable: true }}
+        paginationType={'custom'}
+        Pagination={true}
+      >
+        <SwiperSlide virtualIndex={'1'}>
+          <img
+            src={'./image/demobg1.jpg'}
+            alt={''}
+            style={{ width: '100%', objectFit: 'contain' }}
+          />
+        </SwiperSlide>
+        <SwiperSlide virtualIndex={'2'}>
+          <img
+            src={'./image/demobg2.jpg'}
+            alt={''}
+            style={{ width: '100%', objectFit: 'contain' }}
+          />
+        </SwiperSlide>
+      </Swiper>
     </div>
   );
 };

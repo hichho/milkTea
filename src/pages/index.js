@@ -15,7 +15,7 @@ import Body8 from '@/components/Body8';
 export default () => {
   return (
     <Flex direction={'column'} className={styles.index} alignItems={'center'}>
-      {/*<CarouselinBody />*/}
+      <CarouselinBody />
 
       {/*两张卡片*/}
       {/*<Body1 />*/}
