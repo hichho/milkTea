@@ -1,4 +1,4 @@
-import {defineConfig} from 'umi';
+import { defineConfig } from 'umi';
 
 // const SERVER_URL = 'http://nurse.dev.kepai365.com/';
 const SERVER_URL = 'http://huli.tmp.vastchain.ltd/';
@@ -11,8 +11,8 @@ export default defineConfig({
     type: 'none',
   },
   publicPath: './',
-  title: 'demo',
-  history: {type: 'hash'},
+  title: '任性排骨',
+  history: { type: 'hash' },
   ignoreMomentLocale: true,
   targets: {
     ie: 10,
@@ -21,22 +21,22 @@ export default defineConfig({
     '/manager': {
       target: SERVER_URL,
       changeOrigin: true,
-      pathRewrite: {'^/': ''},
+      pathRewrite: { '^/': '' },
     },
     '/web': {
       target: SERVER_URL,
       changeOrigin: true,
-      pathRewrite: {'^/': ''},
+      pathRewrite: { '^/': '' },
     },
     '/tools': {
       target: SERVER_URL,
       changeOrigin: true,
-      pathRewrite: {'^/': ''},
+      pathRewrite: { '^/': '' },
     },
     '/upload': {
       target: SERVER_URL,
       changeOrigin: true,
-      pathRewrite: {'^/': ''},
+      pathRewrite: { '^/': '' },
     },
   },
 });

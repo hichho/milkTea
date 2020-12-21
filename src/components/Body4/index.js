@@ -25,7 +25,7 @@ export default () => {
         <Flex className={less.righttitle}>门店照片</Flex>
       </Flex>
 
-      <Flex style={{ marginTop: 120, width: '100%' }} itemGrow={1}>
+      <Flex style={{ margin: '120px 0 160px 0', width: '100%' }} itemGrow={1}>
         <Swiper
           spaceBetween={12}
           slidesPerView={3}

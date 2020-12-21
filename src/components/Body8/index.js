@@ -42,7 +42,9 @@ export default () => {
 
         <Flex className={less.content}>Mobile:121212121;</Flex>
 
-        <Flex className={less.content}>Email:sourcing@gumingc.com</Flex>
+        <Flex className={less.content} style={{ marginBottom: 72 }}>
+          Email:sourcing@gumingc.com
+        </Flex>
       </Flex>
     </Flex>
   );

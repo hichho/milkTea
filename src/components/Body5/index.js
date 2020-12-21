@@ -14,7 +14,10 @@ export default () => {
       </Flex>
 
       {/*  map*/}
-      <Flex justify={'space-between'} style={{ width: 1160, marginTop: 120 }}>
+      <Flex
+        justify={'space-between'}
+        style={{ width: 1160, margin: '120px 0 80px 0' }}
+      >
         <img src={'./image/map.png'} alt={''} style={{}} />
         <Flex direction={'column'} style={{ marginTop: 64 }}>
           <Flex className={less.righttitle}>

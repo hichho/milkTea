@@ -27,15 +27,9 @@ export default () => {
     let text = ['等级专属券', '免邮特权', '生日礼券'];
     for (let i = 1; i <= total; i++) {
       if (i == current) {
-        paginationHtml += `<div class='pagination pagination_active'>
-                            <span class='pagination_icon icon${i}'></span>
-                            <span class='pagination_text'>${text[i - 1]}</span>
-                          </div>`;
+        paginationHtml = <div>{text[i]}</div>;
       } else {
-        paginationHtml += `<div class='pagination'>
-                            <span class='pagination_icon icon${i}'></span>
-                            <span class='pagination_text'>${text[i - 1]}</span>
-                          </div>`;
+        paginationHtml = <div>{text[i]}</div>;
       }
     }
     console.log(paginationHtml);
@@ -48,6 +42,7 @@ export default () => {
       style={{
         width: '100%',
         height: '500px',
+        disableOnInteraction: false,
       }}
     >
       <Swiper
@@ -68,21 +63,21 @@ export default () => {
           <img
             src={'./image/demobg1.jpg'}
             alt={''}
-            style={{ width: '100%', height: '500px', objectFit: 'contain' }}
+            style={{ width: '100%', height: '500px', objectFit: 'cover' }}
           />
         </SwiperSlide>
         <SwiperSlide virtualIndex={'2'}>
           <img
             src={'./image/demobg2.jpg'}
             alt={''}
-            style={{ width: '100%', height: '500px', objectFit: 'contain' }}
+            style={{ width: '100%', height: '500px', objectFit: 'cover' }}
           />
         </SwiperSlide>
         <SwiperSlide virtualIndex={'3'}>
           <img
             src={'./image/demobg1.jpg'}
             alt={''}
-            style={{ width: '100%', height: '500px', objectFit: 'contain' }}
+            style={{ width: '100%', height: '500px', objectFit: 'cover' }}
           />
         </SwiperSlide>
       </Swiper>
