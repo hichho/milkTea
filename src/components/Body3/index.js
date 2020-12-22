@@ -111,22 +111,24 @@ export default () => {
   };
 
   return (
-    <Flex className={less.frame} alignItems={'center'} direction={'column'}>
-      {/*title*/}
+    <Flex style={{ width: '100%' }} justify={'center'}>
+      <Flex className={less.frame} alignItems={'center'} direction={'column'}>
+        {/*title*/}
 
-      {/*  title*/}
-      <Flex className={less.title} justify={'flex-start'}>
-        <span style={{ marginLeft: 24 }}>Progress</span>
-        <span className={less.smalltitle}>古茗历程</span>
-      </Flex>
+        {/*  title*/}
+        <Flex className={less.title} justify={'flex-start'}>
+          <span style={{ marginLeft: 24 }}>Progress</span>
+          <span className={less.smalltitle}>古茗历程</span>
+        </Flex>
 
-      <Flex direction={'column'} className={less.bodyFrame}>
-        {/*  柱子*/}
-        <Flex className={less.line}></Flex>
-        {/*斜柱子*/}
-        <Flex className={less.specialline}></Flex>
+        <Flex direction={'column'} className={less.bodyFrame}>
+          {/*  柱子*/}
+          <Flex className={less.line}></Flex>
+          {/*斜柱子*/}
+          <Flex className={less.specialline}></Flex>
 
-        {renderItem()}
+          {renderItem()}
+        </Flex>
       </Flex>
     </Flex>
   );
