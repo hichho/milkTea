@@ -11,7 +11,7 @@ export default props => {
     <LocaleProvider locale={zh_CN}>
       <div>
         <Header />
-        <div style={{ minHeight: '80vh' }}>{props.children}</div>
+        <div style={{ minHeight: '80vh', width: '100%' }}>{props.children}</div>
         {/*/footer*/}
 
         {/*<Foot />*/}

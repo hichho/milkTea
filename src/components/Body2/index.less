@@ -19,7 +19,7 @@
 }
 
 :root {
-  --swiper-theme-color: #007aff;
+  //--swiper-theme-color: #007aff;
 }
 
 .swiper-container {
@@ -272,7 +272,7 @@
 .swiper-pagination-fraction,
 .swiper-pagination-custom,
 .swiper-container-horizontal > .swiper-pagination-bullets {
-  bottom: 10px;
+  bottom: 0px;
   left: 0;
   width: 100%;
 }
@@ -349,7 +349,6 @@ button.swiper-pagination-bullet {
 .swiper-container-vertical
   > .swiper-pagination-bullets
   .swiper-pagination-bullet {
-  margin: 6px 0;
   display: block;
 }
 
@@ -370,7 +369,6 @@ button.swiper-pagination-bullet {
 .swiper-container-horizontal
   > .swiper-pagination-bullets
   .swiper-pagination-bullet {
-  margin: 0 4px;
 }
 
 .swiper-container-horizontal
@@ -663,76 +661,59 @@ button.swiper-pagination-bullet {
   backface-visibility: hidden;
 }
 
-//.swiperPag {
-//  //width: 80vw;
-//  height: 10vw;
-//  display: flex;
-//  align-items: center;
-//  justify-content: center;
-//  margin: 0 auto;
-//}
-//
-//.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
-//  bottom: 0.27rem;
-//}
-//
-//.swiper-pagination-customs {
-//  width: 20vw;
-//  height: 10vw;
-//  background-color: white;
-//  /*display: inline-block;*/
-//}
-//
-///*自定义分页器激活时的样式表现*/
-//.swiper-pagination-customs-active {
-//  width: 20vw;
-//  height: 10vw;
-//  /*display: inline-block;*/
-//  background-color: #112123;
-//  color: white;
-//}
-
-//.swiperPag {
-//  width:4.5rem;
-//  height: 0.07rem;
-//  border-radius: 0.04rem;
-//  display: flex;
-//  align-items: center;
-//  margin:0 auto;
-//  background-color: red;
-//}
-//.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
-//  bottom:0.27rem;
-//}
-//.swiper-pagination-customs {
-//  width: 1.5rem;
-//  height: 0.14rem;
-//  display: inline-block;
-//}
-///*自定义分页器激活时的样式表现*/
-//.swiper-pagination-customs-active {
-//  width: 1.5rem;
-//  height: 0.14rem;
-//  display: inline-block;
-//  border-radius: 0.07rem;
-//  background-color: #28a7e1;
-//}
+.swiper-pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 
 　　.swiper-pagination-bullet {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: inline-block;
-  opacity: 0.5;
+  width: 20vw;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  bottom: 0 !important;
+  opacity: 1;
+  border-radius: 0;
+  margin: 0 !important;
   cursor: pointer;
-  border: 2px solid #979797;
+  background-color: white;
+  color: #112123;
   transition: all 0.05s ease-in;
+  align-items: center;
+
+  div {
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  p {
+    font-size: 12px;
+  }
 }
 
-.ubolt-black {
-  background: #0e0e0e;
-}
+.swiper-pagination-bullet-active {
+  background-color: #112123;
+  color: white;
+  bottom: 0 !important;
 
-.ubolt-white {
-  background: #d8d8d8;
+  img {
+    filter: grayscale(100%) brightness(800%);
+  }
+
+  div {
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  p {
+    font-size: 12px;
+  }
 }

@@ -1,14 +1,13 @@
 .frame {
   padding: 32px 0;
-  width: 1160px;
+  width: 100%;
   height: 1200px;
 
   font-family: Microsoft YaHei;
 
   .title {
-    width: 1160px;
+    width: 100%;
     font-size: 60px;
-    font-family: Microsoft YaHei;
     color: black;
 
     .smalltitle {
@@ -54,6 +53,7 @@
       .item {
         //background-color: red;
         margin: 12px 0;
+        width: 80%;
 
         .time {
           font-size: 30px;
@@ -98,10 +98,57 @@
           }
 
           .contentValue {
+            width: 100%;
+            max-width: 460px;
+            background-color: red;
+            overflow: hidden;
             font-size: 17px;
             color: black;
             letter-spacing: 2px;
             margin-left: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .frame {
+    .title {
+      font-size: 32px;
+
+      .smalltitle {
+        font-size: 20px;
+      }
+    }
+
+    .bodyFrame {
+      .itemFrame {
+        .item {
+          font-size: 20px;
+        }
+
+        .border {
+          .circle {
+            width: 26px;
+            height: 26px;
+
+            .in {
+              width: 18px;
+              height: 18px;
+            }
+          }
+        }
+
+        .content {
+          font-size: 16px;
+
+          .contentValue {
+            width: 100%;
+            font-size: 14px;
+            background-color: blue;
+            overflow: hidden;
           }
         }
       }

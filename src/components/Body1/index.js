@@ -72,7 +72,7 @@ export default () => {
     <Flex className={less.frame} alignItems={'center'} direction={'column'}>
       {/*title*/}
       <Flex className={less.title}>
-        <span>HOW</span>
+        <span style={{ marginLeft: 32 }}>HOW</span>
         <span className={less.righttitle}>如何识别古茗 慎防诈骗</span>
         <Flex className={less.line}></Flex>
       </Flex>

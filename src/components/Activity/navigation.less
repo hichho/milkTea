@@ -1,17 +1,19 @@
-
-@themeColor: #007aff;
+//@themeColor: #007aff;
 @colors: white #ffffff, black #000000;
-
 
 .navigation-color-loop(@ruleset) when (length( @colors ) >= 1) {
   @length: length(@colors);
-  .looper( 1 );
-  .looper( @index ) when ( @index <= @length ) and (length(extract( @colors, @index )) = 2) {
+  .looper(1);
+  .looper( @index )
+    when
+    ( @index <= @length )
+    and
+    (length(extract( @colors, @index )) = 2) {
     @navPair: extract(@colors, @index);
     @navColorName: extract(@navPair, 1);
     @navColorValue: extract(@navPair, 2);
     @ruleset();
-    .looper( @index + 1 );
+    .looper(@index + 1);
   }
 }
 
@@ -55,7 +57,7 @@
     content: 'prev';
   }
   left: 10px;
-  color:white;
+  color: white;
   right: auto;
 }
 .swiper-button-next,
@@ -64,17 +66,14 @@
     content: 'next';
   }
   right: 10px;
-  color:white;
+  color: white;
   left: auto;
 }
-.navigation-color-loop({
-  .swiper-button-prev,
-  .swiper-button-next {
-    &.swiper-button-@{navColorName} {
-      --swiper-navigation-color: @navColorValue;
-    }
-  }
-});
+.navigation-color-loop(
+  {.swiper-button-prev,
+  .swiper-button-next {&.swiper-button- @{navColorName} {--swiper-navigation-color:
+    @navColorValue;}}}
+);
 .swiper-button-lock {
   display: none;
 }

@@ -116,7 +116,7 @@ export default () => {
 
       {/*  title*/}
       <Flex className={less.title} justify={'flex-start'}>
-        <span>Progress</span>
+        <span style={{ marginLeft: 24 }}>Progress</span>
         <span className={less.smalltitle}>古茗历程</span>
       </Flex>
 

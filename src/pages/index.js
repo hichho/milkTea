@@ -26,7 +26,7 @@ export default () => {
       {/*<DemoBody2 />*/}
 
       {/*  历程*/}
-      {/*<Body3 />*/}
+      <Body3 />
 
       {/*  门店*/}
       {/*<Body4 />*/}
