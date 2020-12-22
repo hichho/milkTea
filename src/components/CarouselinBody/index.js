@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper-bundle.css';
 import SwiperCore, {
   Navigation,
   Scrollbar,
@@ -8,41 +7,33 @@ import SwiperCore, {
   Thumbs,
   Autoplay,
 } from 'swiper';
+import less from './index.less';
 
 SwiperCore.use([Navigation, Scrollbar, A11y, Thumbs, Autoplay]);
 
 export default () => {
   return (
-    <div
-      className="swiper-container"
-      style={{
-        width: '100%',
-        marginTop: 52,
-        disableOnInteraction: false,
-      }}
-    >
+    <div className={'swiper-container'}>
       <Swiper
         loop={true}
         autoplay={{
           autoPlay: true,
-          delay: 15000,
+          delay: 3000,
           autoplayDisableOnInteraction: false,
         }}
+        // pagination={{
+        //   el: '.swiper-pagination1',
+        //   clickable: true,
+        //
+        // }}
       >
         <SwiperSlide virtualIndex={'1'}>
-          <img
-            src={'./image/demobg1.jpg'}
-            alt={''}
-            style={{ width: '100%', objectFit: 'contain' }}
-          />
+          <img className={'bg'} src={'./image/demobg1.jpg'} alt={''} />
         </SwiperSlide>
         <SwiperSlide virtualIndex={'2'}>
-          <img
-            src={'./image/demobg2.jpg'}
-            alt={''}
-            style={{ width: '100%', objectFit: 'contain' }}
-          />
+          <img className={'bg'} src={'./image/demobg2.jpg'} alt={''} />
         </SwiperSlide>
+        <div className="swiper-pagination1"></div>
       </Swiper>
     </div>
   );

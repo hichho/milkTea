@@ -21,19 +21,12 @@ export default () => {
   let mySwiper;
 
   return (
-    <div
-      className="swiper-container"
-      style={{
-        width: '100%',
-        height: '600px',
-        disableOnInteraction: false,
-      }}
-    >
+    <div className="swiper-container">
       <Swiper
         loop={true}
         autoplay={{
           autoPlay: true,
-          delay: 150000,
+          delay: 3000,
           autoplayDisableOnInteraction: false,
         }}
         pagination={{
@@ -94,32 +87,16 @@ export default () => {
         }}
       >
         <SwiperSlide virtualIndex={'1'}>
-          <img
-            src={'./image/demoimg1.jpg'}
-            alt={''}
-            style={{ width: '100%', height: '600px', objectFit: 'cover' }}
-          />
+          <img src={'./image/demoimg1.jpg'} alt={''} className="bg" />
         </SwiperSlide>
         <SwiperSlide virtualIndex={'2'}>
-          <img
-            src={'./image/demoimg2.jpg'}
-            alt={''}
-            style={{ width: '100%', height: '600px', objectFit: 'cover' }}
-          />
+          <img src={'./image/demoimg2.jpg'} alt={''} className="bg" />
         </SwiperSlide>
         <SwiperSlide virtualIndex={'3'}>
-          <img
-            src={'./image/demoimg3.jpg'}
-            alt={''}
-            style={{ width: '100%', height: '600px', objectFit: 'cover' }}
-          />
+          <img src={'./image/demoimg3.jpg'} alt={''} className="bg" />
         </SwiperSlide>
         <SwiperSlide virtualIndex={'4'}>
-          <img
-            src={'./image/demoimg4.jpg'}
-            alt={''}
-            style={{ width: '100%', height: '600px', objectFit: 'cover' }}
-          />
+          <img src={'./image/demoimg4.jpg'} alt={''} className="bg" />
         </SwiperSlide>
         <div className="swiper-pagination"></div>
       </Swiper>
