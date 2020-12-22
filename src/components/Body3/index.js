@@ -7,38 +7,63 @@ export default () => {
   const itemData = [
     {
       time: '2010',
-      info: [<Flex>第1家合作门店开业【古茗开始连锁经营模式】</Flex>],
+      info: [
+        <Flex style={{ width: '100%' }}>
+          第1家合作门店开业【古茗开始连锁经营模式】
+        </Flex>,
+      ],
     },
     {
       time: '2011',
       info: [
-        <Flex>第1家合作门店开业【古茗开始连锁经营模式】</Flex>,
-        <Flex>
+        <Flex style={{ width: '100%' }}>
+          第1家合作门店开业【古茗开始连锁经营模式】
+        </Flex>,
+        <span style={{ width: '100%' }}>
           经过一年半的整改和口味的突破，古茗升级第2代，单店单天出杯突破
           <span style={{ color: '#c6ac82' }}>1000杯</span>
-        </Flex>,
+        </span>,
       ],
     },
-    { time: '2012', info: [<Flex>第一家古茗营业</Flex>] },
-    { time: '2013', info: [<Flex>第一家古茗营业</Flex>] },
-    { time: '2014', info: [<Flex>第一家古茗营业</Flex>] },
+    {
+      time: '2014',
+      info: [<Flex style={{ width: '100%' }}>第一家古茗营业</Flex>],
+    },
     {
       time: '2015',
       info: [
-        <Flex>第1家合作门店开业【古茗开始连锁经营模式】</Flex>,
-        <Flex>
+        <Flex style={{ width: '100%' }}>
+          第1家合作门店开业【古茗开始连锁经营模式】
+        </Flex>,
+        <Flex style={{ width: '100%' }}>
           经过一年半的整改和口味的突破，古茗升级第2代，单店单天出杯突破
           <span style={{ color: '#c6ac82' }}>1000杯</span>
         </Flex>,
       ],
     },
-    { time: '2016', info: [<Flex>第一家古茗营业</Flex>] },
-    { time: '2017', info: [<Flex>第一家古茗营业</Flex>] },
+    {
+      time: '2016',
+      info: [<Flex style={{ width: '100%' }}>第一家古茗营业</Flex>],
+    },
+    {
+      time: '2017',
+      info: [<Flex style={{ width: '100%' }}>第一家古茗营业</Flex>],
+    },
+    {
+      time: '2017',
+      info: [<Flex style={{ width: '100%' }}>第一家古茗营业</Flex>],
+    },
+    {
+      time: '2017',
+      info: [<Flex style={{ width: '100%' }}>第一家古茗营业</Flex>],
+    },
     {
       time: '2018',
       info: [
-        <Flex>第1家合作门店开业【古茗开始连锁经营模式】</Flex>,
-        <Flex>
+        <Flex style={{ width: '100%' }}>
+          第1家合作门店开业【古茗开始连锁经营模式】
+        </Flex>,
+        <Flex style={{ width: '100%' }}>
           经过一年半的整改和口味的突破，古茗升级第2代，单店单天出杯突破
           <span style={{ color: '#c6ac82' }}>1000杯</span>
         </Flex>,
@@ -117,7 +142,7 @@ export default () => {
 
         {/*  title*/}
         <Flex className={less.title} justify={'flex-start'}>
-          <span style={{ marginLeft: 24 }}>Progress</span>
+          <span className={less.bigtitle}>Progress</span>
           <span className={less.smalltitle}>古茗历程</span>
         </Flex>
 
