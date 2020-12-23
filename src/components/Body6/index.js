@@ -41,18 +41,13 @@ export default () => {
     >
       <Flex className={less.frame} direction={'column'}>
         {/*title*/}
-
-        <Flex className={less.title} justify={'flex-start'}>
-          <span>Branded Advantages</span>
-          <span className={less.smalltitle}>品牌优势</span>
+        <Flex className={'title'}>
+          <span className={'bigtitle'}>Branded Advantages</span>
+          <span className={'smalltitle'}>品牌优势</span>
         </Flex>
         {/*  content*/}
 
-        <Flex
-          wrap={'wrap'}
-          style={{ width: 1160, marginTop: 120 }}
-          justify={'center'}
-        >
+        <Flex className={less.cardFrame} wrap={'wrap'} justify={'center'}>
           {data.map((item, index) => {
             return (
               <Flex
