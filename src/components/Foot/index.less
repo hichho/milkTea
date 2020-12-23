@@ -2,11 +2,61 @@
   height: 260px;
   width: 100%;
   background-color: white;
-  .content {
-    width: 1160px;
+
+  .content1 {
+    max-width: 1160px;
+    width: 100%;
     padding: 20px 0;
+
     .text {
       color: #cfd0ca;
+    }
+
+    .img {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  .content2 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .all {
+    height: 100% !important;
+
+    .content1 {
+      display: none;
+    }
+
+    .content2 {
+      width: 100%;
+      display: block;
+      height: 100px !important;
+      background-color: #d6d6d6;
+      color: #112123;
+      padding: 12px 26px 164px 26px;
+      font-size: 12px;
+
+      .btnarea {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        padding: 12px 16px;
+        width: 100%;
+        background-color: #333;
+
+        .btn {
+          background-color: #f7b500;
+          color: black;
+          height: 32px;
+          font-size: 15px;
+          font-weight: 500;
+          border-radius: 16px;
+          padding: 0 42px;
+        }
+      }
     }
   }
 }

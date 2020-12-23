@@ -14,7 +14,7 @@ export default props => {
         <div style={{ minHeight: '80vh', width: '100%' }}>{props.children}</div>
         {/*/footer*/}
 
-        {/*<Foot />*/}
+        <Foot />
       </div>
     </LocaleProvider>
   );
