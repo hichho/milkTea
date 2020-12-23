@@ -10,6 +10,7 @@
     width: 100%;
     font-size: 60px;
     color: black;
+    margin-top: 42px;
 
     .bigtitle {
       margin-left: 24px;
@@ -25,6 +26,7 @@
   .bodyFrame {
     width: 100%;
     margin-bottom: 42px;
+    height: 100%;
     //柱子
     .line {
       width: 3px;
@@ -117,22 +119,11 @@
 
 @media only screen and (max-width: 1160px) {
   .frame {
-    width: 90% !important;
-    overflow: hidden !important;
-
-    .title {
-      font-size: 32px;
-
-      .bigtitle {
-        margin-left: 0;
-      }
-
-      .smalltitle {
-        font-size: 20px;
-      }
-    }
-
+    height: 1360px;
     .bodyFrame {
+      width: 90% !important;
+      overflow: hidden !important;
+      height: 1360px;
       .line {
         position: absolute;
         top: 16px;

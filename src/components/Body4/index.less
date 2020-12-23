@@ -1,10 +1,46 @@
-.title {
-  font-family: Microsoft YaHei;
-  font-size: 60px;
+.all {
+  width: 100%;
+  max-width: 1160px;
+
+  .frame {
+    margin: 140px 0 0 0;
+
+    .title {
+      font-family: Microsoft YaHei;
+      font-size: 60px;
+    }
+
+    .righttitle {
+      font-size: 36px;
+      margin-top: 12px;
+      margin-left: 42px;
+    }
+  }
+
+  .swiperframe {
+    margin: 120px 0 160px 0;
+    width: 100%;
+  }
 }
 
-.righttitle {
-  font-size: 36px;
-  margin-top: 12px;
-  margin-left: 42px;
+@media only screen and(max-width: 768px) {
+  .all {
+    width: 90% !important;
+
+    .frame {
+      margin: 60px 0 0 0 !important;
+
+      .title {
+        font-size: 32px;
+      }
+
+      .righttitle {
+        font-size: 20px;
+      }
+    }
+
+    .swiperframe {
+      margin: 48px 0 0 0;
+    }
+  }
 }

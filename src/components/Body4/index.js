@@ -12,69 +12,73 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 export default () => {
   return (
     <Flex
-      style={{ backgroundColor: '#d6d6d6', width: '100%' }}
-      direction={'column'}
-      alignItems={'center'}
+      style={{ width: '100%', backgroundColor: '#d6d6d6' }}
+      justify={'center'}
     >
-      {/*title*/}
       <Flex
-        style={{ width: 1160, margin: '140px 0 0 0' }}
-        alignItems={'center'}
+        className={less.all}
+        style={{ backgroundColor: '#d6d6d6', width: '100%' }}
+        direction={'column'}
       >
-        <Flex className={less.title}>Image</Flex>
-        <Flex className={less.righttitle}>门店照片</Flex>
-      </Flex>
-
-      <Flex style={{ margin: '120px 0 160px 0', width: '100%' }} itemGrow={1}>
-        <Swiper
-          spaceBetween={12}
-          slidesPerView={3}
-          navigation
-          // onSwiper={swiper => console.log(swiper)}
-          // onSlideChange={() => console.log('slide change')}
+        {/*title*/}
+        <Flex
+          className={less.frame}
+          style={{ margin: '140px 0 0 0' }}
+          alignItems={'center'}
         >
-          <SwiperSlide key={'1'} tag={'div'} zoom={false}>
-            <Flex>
-              <img
-                src={'./image/shop1.jpg'}
-                alt={''}
-                style={{
-                  width: '320px',
-                  height: '320px',
-                  objectFit: 'contain',
-                }}
-              />
-            </Flex>
-          </SwiperSlide>
+          <Flex className={less.title}>Image</Flex>
+          <Flex className={less.righttitle}>门店照片</Flex>
+        </Flex>
 
-          <SwiperSlide key={'2'} tag={'div'} zoom={false}>
-            <Flex>
-              <img
-                src={'./image/shop2.jpg'}
-                alt={''}
-                style={{
-                  width: '320px',
-                  height: '320px',
-                  objectFit: 'contain',
-                }}
-              />
-            </Flex>
-          </SwiperSlide>
+        <Flex itemGrow={1} className={less.swiperframe}>
+          <Swiper
+            spaceBetween={12}
+            slidesPerView={3}
+            // navigation
+          >
+            <SwiperSlide key={'1'} tag={'div'} zoom={false}>
+              <Flex>
+                <img
+                  src={'./image/shop1.jpg'}
+                  alt={''}
+                  style={{
+                    width: '320px',
+                    height: '320px',
+                    objectFit: 'contain',
+                  }}
+                />
+              </Flex>
+            </SwiperSlide>
 
-          <SwiperSlide key={'3'} tag={'div'} zoom={false}>
-            <Flex>
-              <img
-                src={'./image/shop3.jpg'}
-                alt={''}
-                style={{
-                  width: '320px',
-                  height: '320px',
-                  objectFit: 'contain',
-                }}
-              />
-            </Flex>
-          </SwiperSlide>
-        </Swiper>
+            <SwiperSlide key={'2'} tag={'div'} zoom={false}>
+              <Flex>
+                <img
+                  src={'./image/shop2.jpg'}
+                  alt={''}
+                  style={{
+                    width: '320px',
+                    height: '320px',
+                    objectFit: 'contain',
+                  }}
+                />
+              </Flex>
+            </SwiperSlide>
+
+            <SwiperSlide key={'3'} tag={'div'} zoom={false}>
+              <Flex>
+                <img
+                  src={'./image/shop3.jpg'}
+                  alt={''}
+                  style={{
+                    width: '320px',
+                    height: '320px',
+                    objectFit: 'contain',
+                  }}
+                />
+              </Flex>
+            </SwiperSlide>
+          </Swiper>
+        </Flex>
       </Flex>
     </Flex>
   );

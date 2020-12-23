@@ -139,11 +139,10 @@ export default () => {
     <Flex style={{ width: '100%' }} justify={'center'}>
       <Flex className={less.frame} alignItems={'center'} direction={'column'}>
         {/*title*/}
-
-        {/*  title*/}
-        <Flex className={less.title} justify={'flex-start'}>
-          <span className={less.bigtitle}>Progress</span>
-          <span className={less.smalltitle}>古茗历程</span>
+        <Flex className={'title'}>
+          <span className={'bigtitle'}>Progress</span>
+          <span className={'smalltitle'}>古茗历程</span>
+          <Flex className={less.line}></Flex>
         </Flex>
 
         <Flex direction={'column'} className={less.bodyFrame}>
