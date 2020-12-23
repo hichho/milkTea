@@ -41,7 +41,7 @@ export default () => {
       <Body7 />
 
       {/*联系我们*/}
-      {/*<Body8 />*/}
+      <Body8 />
 
       {/*    空白*/}
       {/*<div style={{ height: 640 }}></div>*/}

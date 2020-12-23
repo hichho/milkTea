@@ -1,31 +1,101 @@
+.bg {
+  object-fit: cover;
+  min-height: 600px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.mobilebg {
+  display: none;
+}
+
 .frame {
   width: 100%;
   font-family: Microsoft YaHei;
+  max-width: 1160px;
+  height: 100%;
+  padding-top: 60px;
 
-  .title {
-    margin-top: 110px;
-    width: 1160px;
-    font-size: 60px;
-    font-family: Microsoft YaHei;
-    color: #c6ac82;
+  .border {
+    .title {
+      margin-top: 110px;
+      width: 100%;
+      max-width: 1160px;
+      font-size: 60px;
+      font-family: Microsoft YaHei;
+      color: #c6ac82;
 
-    .smalltitle {
-      font-size: 36px;
-      margin-top: 8px;
-      margin-left: 56px;
+      .smalltitle {
+        font-size: 36px;
+        margin-top: 8px;
+        margin-left: 56px;
+      }
     }
   }
 
   .line {
     background-color: #dcdcdc;
     z-index: 4;
-    margin: 50px 0 50px 12px;
+    margin: 50px 0 50px 32px;
     width: 80px;
     color: white;
     height: 3px;
   }
+
   .content {
     color: #dcdcdc;
-    margin-left: 12px;
+    margin-left: 32px;
+  }
+
+  .contents {
+    color: #dcdcdc;
+    margin-left: 32px;
+    margin-bottom: 72px;
+  }
+
+  .mobileInfo {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .bg {
+    display: none;
+    width: 100%;
+  }
+
+  .mobilebg {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .frame {
+    width: 100%;
+    height: 100%;
+    padding-top: 0 !important;
+
+    .contents {
+      margin-bottom: 12px;
+    }
+
+    .mobileInfo {
+      display: block;
+      margin-left: 24px;
+      margin-bottom: 32px;
+
+      .scan {
+        width: 100px;
+        height: 100px;
+        margin: 12px 12px 12px 0;
+      }
+    }
   }
 }
