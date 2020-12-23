@@ -69,7 +69,10 @@ export default () => {
   };
 
   return (
-    <Flex style={{ width: '100%' }} justify={'center'}>
+    <Flex
+      style={{ width: '100%', backgroundColor: 'white' }}
+      justify={'center'}
+    >
       <Flex className={less.frame} alignItems={'center'} direction={'column'}>
         {/*title*/}
         <Flex className={'title'}>
